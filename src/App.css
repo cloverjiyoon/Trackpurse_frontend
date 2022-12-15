@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Vai&display=swap");
+
+:root {
+  --color-yellow: #f9c74f;
+  --color-purple: #9d4edd;
+}
+
+* > * {
+  font-family: "Noto Sans Vai", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  padding: 4em 0;
+  padding-bottom: 100px;
+}
+
+
+.text-to-right{
+  direction: rtl;
+  text-align: right;
+}
+
+.bg-yellow {
+  background-color: var(--color-yellow);
+}
+
+.bg-purple {
+  background-color: var(--color-purple);
+}
+
+.chart .title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-input {
+  @apply mt-1 block w-full py-2 px-3 border  border-gray-200 bg-white rounded-md focus:outline-none focus:ring-indigo-500 sm:text-sm;
+}
+
+.button {
+  background-color: var(--color-purple); /* purple */
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.navbar-brand.brand {
+  color: white;
+  padding: 0;
+}
+
+.navbar-nav.nav-link.link{
+  color: white !important;
+}
+
+.navItem{
+  color: white !important;
+}
+
+.nav-link{
+  padding: 0;
+}
+
+.main-container{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+img.Logo{
+  height: 100px;
+  padding-right: 10px;
+  padding-left: 5px;
+}
