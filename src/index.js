@@ -5,10 +5,9 @@ import App from "./App";
 
 import { store } from "./store/store";
 import { Provider } from "react-redux";
-// import {disableReactDevTools} from '@fvilers/disable-react-devtools';
+import {disableReactDevTools} from '@fvilers/disable-react-devtools';
 
-// if (processResult.env.NODE_ENV === 'production') disableReactDevTools();
-
+if (process.env.NODE_ENV === 'production') disableReactDevTools();
 
 import reportWebVitals from "./reportWebVitals";
 

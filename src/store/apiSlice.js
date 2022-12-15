@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-const baseURI = "http://localhost:8080";
-// const baseURI = "https://trackpurse.onrender.com";
+// const baseURI = "http://localhost:8080";
+const baseURI = "https://trackpurse.onrender.com";
 
 export const apiSlice = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: baseURI }),
